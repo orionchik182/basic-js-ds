@@ -55,10 +55,10 @@ class BinarySearchTree {
 
     function searchWithin(node, data) {
       if (!node) {
-        return false;
+        return null;
       }
       if (node.data === data) {
-        return node.data;
+        return node;
       }
       return data < node.data
         ? searchWithin(node.left, data)
